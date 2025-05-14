@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "React Sidebar Extension",
+  "version": "1.0",
+  "description": "Sidebar built with React",
+  "permissions": ["sidePanel"],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_title": "Open Sidebar"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
