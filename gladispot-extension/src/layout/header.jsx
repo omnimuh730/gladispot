@@ -7,12 +7,13 @@ import {
     SignalWifiOff
 } from '@mui/icons-material'
 
+import { useSocket } from '../core/socket/SocketContext';
+
 const HeaderComponent = () => {
+    const { isOnline } = useSocket();
     return(
         <>
-            <Chip icon={<SignalWifi4Bar />} label="Online" color = "primary"/>
-            <Chip icon={<SignalWifiConnectedNoInternet4 />} label="Server down" color = "error"/>
-            <Chip icon={<SignalWifiOff />} label="Intermediary down" color = "warning"/>
+            <Chip icon={<SignalWifi4Bar />} label={isOnline ? "Online" : "Offline"} color = {isOnline ? "primary" : "error"} />
         </>
     );
 }
