@@ -86,18 +86,7 @@ cd ConnectManage
 npm install
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view in your browser.
-
----
-
-### Log
-
-```bash
-cd Log
-npm install
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) to view in your browser.
+Open [http://localhost:7400](http://localhost:7400) to view in your browser.
 
 ---
 
@@ -120,7 +109,7 @@ cd Mailcolor
 npm install
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view in your browser.
+Open [http://localhost:7500](http://localhost:7500) to view in your browser.
 
 ---
 
